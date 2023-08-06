@@ -1,0 +1,59 @@
+h1 {
+
+    text-align: center;
+    background-color: blanchedalmond;
+    color: rgba(2, 141, 2, 0.726);
+    font-family: 'Times New Roman', serif;
+
+}
+
+div.list{
+
+    text-align: center;
+    color: rgb(12, 78, 12);
+    font-family: 'Times New Roman', serif;
+}
+
+ul.link {
+    display: inline-block;
+    text-align: left;
+    font-family: 'Times New Roman', serif;
+  }
+
+ol.link {
+
+    display: inline-block;
+    text-align: left;
+    font-family: 'Times New Roman', serif;
+}
+
+img.img.small{
+
+    height: auto;
+    width: 350px;
+
+}
+
+img.img.big{
+
+    height: auto;
+    width: 500px;
+
+}
+
+img.img.small.center,
+img.img.big.center{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h5,
+h2
+{
+
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+}
