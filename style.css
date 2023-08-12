@@ -1,31 +1,69 @@
+html{
+    font-family: 'Times New Roman', serif;
+}
 h1 {
 
+    font-family: 'Times New Roman', serif;
     text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 52px;
+    
+}
+
+h1.title.index{
+
     background-color: blanchedalmond;
     color: rgba(2, 141, 2, 0.726);
-    font-family: 'Times New Roman', serif;
+    width: 600px;
+}
+
+h1.title.recipe{
+
+    background-color: rgba(2, 141, 2, 0.726) ;
+    color: blanchedalmond;
+    width: 800px;
+}
+
+.image{
+
+    margin: 20px auto;
+    padding: 10px;
+    background: blanchedalmond;
+    width: 800px;
+
+}
+
+.ingredients{
+
+    margin: 20px auto;
+    padding: 10px;
+    background: blanchedalmond;
+    width: 800px;
+
+}
+
+.steps{
+
+    margin: 20px auto;
+    padding: 10px;
+    background: blanchedalmond;
+    width: 800px;
 
 }
 
 div.list{
-
     text-align: center;
     color: rgb(12, 78, 12);
-    font-family: 'Times New Roman', serif;
+    
 }
 
-ul.link {
+ul.link,
+ol.link {
     display: inline-block;
     text-align: left;
-    font-family: 'Times New Roman', serif;
   }
 
-ol.link {
-
-    display: inline-block;
-    text-align: left;
-    font-family: 'Times New Roman', serif;
-}
 
 img.img.small{
 
@@ -55,5 +93,41 @@ h2
 {
 
     text-align: center;
+}
+
+#title{
+
     font-family: 'Times New Roman', serif;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 52px;
+    width: 600px;
+}
+
+h1.recipename{
+
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 52px;
+    width: 600px;
+    
+}
+
+div.content{
+
+    width: 500px;
+    background: blanchedalmond;
+    margin: 16px auto;
+    padding: 8px;
+}
+
+h2#recipes{
+
+    color: rgba(2, 141, 2, 0.726);
+    font-size: 32px;
+
+
 }
