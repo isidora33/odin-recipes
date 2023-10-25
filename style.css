@@ -1,133 +1,171 @@
-html{
-    font-family: 'Times New Roman', serif;
-}
-h1 {
-
-    font-family: 'Times New Roman', serif;
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px;
-    font-size: 52px;
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1.title.index{
+:root {
+    --radius: 10px;
+}
 
+html {
+    font-family: "Roboto" !important;
+}
+
+body {
+    background-color: rgba(2, 141, 2, 0.726);
+}
+
+#header {
     background-color: blanchedalmond;
-    color: rgba(2, 141, 2, 0.726);
-    width: 600px;
+    padding: 28px 0;
+    box-shadow: 0px 5px 30px -15px rgba(33, 33, 33, 1);
 }
 
-h1.title.recipe{
-
-    background-color: rgba(2, 141, 2, 0.726) ;
-    color: blanchedalmond;
-    width: 800px;
+#logo i {
+    font-size: 50px;
 }
 
-.image{
-
-    margin: 20px auto;
-    padding: 10px;
-    background: blanchedalmond;
-    width: 800px;
-
+#logo h1 {
+    display: inline;
+    margin-left: 8px;
 }
 
-.ingredients{
-
-    margin: 20px auto;
-    padding: 10px;
-    background: blanchedalmond;
-    width: 800px;
-
+.okvir {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-.steps{
-
-    margin: 20px auto;
-    padding: 10px;
-    background: blanchedalmond;
-    width: 800px;
-
+#header .okvir {
+    display: flex;
 }
 
-div.list{
-    text-align: center;
-    color: rgb(12, 78, 12);
-    
-}
-
-ul.link,
-ol.link {
-    display: inline-block;
-    text-align: left;
-  }
-
-
-img.img.small{
-
-    height: auto;
-    width: 350px;
-
-}
-
-img.img.big{
-
-    height: auto;
-    width: 500px;
-
-}
-
-img.img.small.center,
-img.img.big.center{
-
-    display: block;
+#header ul.links {
     margin-left: auto;
-    margin-right: auto;
-
+    display: flex;
+    align-items: center;
 }
 
-h5,
-h2
-{
-
-    text-align: center;
+#header ul.links li {
+    list-style-type: none;
+    margin: 0 8px;
 }
 
-#title{
-
-    font-family: 'Times New Roman', serif;
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px;
-    font-size: 52px;
-    width: 600px;
+#header ul.links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(2, 141, 2, 0.726);
 }
 
-h1.recipename{
-
-    font-family: 'Times New Roman', serif;
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px;
-    font-size: 52px;
-    width: 600px;
-    
+#header ul.links a:hover {
+    text-decoration: underline;
 }
 
-div.content{
+#logo a {
+    text-decoration: none;
+    color: rgba(2, 141, 2, 0.726);
+    display: flex;
+    align-items: center;
+}
 
-    width: 500px;
-    background: blanchedalmond;
-    margin: 16px auto;
+#body {
+    padding: 3px 0;
+    display: flex;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+#content1 {
+    width: 45%;
+    background-color: blanchedalmond;
+    margin: 15px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+#content2 {
+    width: 55%;
+    margin-right: 8px;
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#picture img {
+    width: 100%;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+#description p {
+    width: 90%;
     padding: 8px;
 }
 
-h2#recipes{
+.recipes {
+    width: 100%;
+    margin: 10px 0;
+    background-color: blanchedalmond;
+    display: flex;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
 
-    color: rgba(2, 141, 2, 0.726);
+.recipes .recipeimg {
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    width: 35%;
+    background-color: rgb(255, 255, 235);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.recipes .recipeDescription {
+    width: 65%;
+}
+
+.recipeimg a {
+    display: flex;
+    justify-content: center;
+}
+
+.recipeimg a img {
+    width: 100%;
+    height: auto;
+}
+
+#description h1 {
+    padding: 8px;
+    font-size: 40px;
+}
+
+.recipeDescription h2 {
+    padding: 6px;
     font-size: 32px;
+}
 
+.recipeDescription a {
+    text-decoration: none;
+}
 
+.recipeDescription h2,
+#description h1 {
+    color: rgba(2, 141, 2, 0.726);
+}
+
+.recipeDescription p {
+    padding: 10px;
+    color: black;
+}
+
+#footer {
+    background-color: beige;
+    padding: 28px 0;
 }
