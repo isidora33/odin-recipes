@@ -9,11 +9,16 @@
 }
 
 html {
-    font-family: "Roboto" !important;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
     background-color: rgba(2, 141, 2, 0.726);
+}
+
+#body {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
 }
 
 #header {
@@ -32,18 +37,21 @@ body {
 }
 
 .okvir {
-    max-width: 1500px;
+    /* max-width: 1500px; */
     margin: 0 auto;
 }
 
 #header .okvir {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #header ul.links {
-    margin-left: auto;
+    /* margin-left: auto; */
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 #header ul.links li {
@@ -61,6 +69,10 @@ body {
     text-decoration: underline;
 }
 
+#logo {
+    width: 40%;
+}
+
 #logo a {
     text-decoration: none;
     color: rgba(2, 141, 2, 0.726);
@@ -72,7 +84,7 @@ body {
     padding: 3px 0;
     display: flex;
     width: 100%;
-    max-width: 980px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -167,5 +179,149 @@ body {
 
 #footer {
     background-color: beige;
-    padding: 28px 0;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 5px 30px -15px rgba(33, 33, 33, 1);
+}
+
+.linksSocial {
+    text-decoration: none;
+    font-size: 25px;
+    margin: 15px 0px;
+    width: 30%;
+    text-align: center;
+    color: rgba(2, 141, 2, 0.726);
+    font-weight: 600;
+}
+
+.linksSocial:hover {
+    text-decoration: line-through;
+}
+
+.mainLink {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.mainLink:hover {
+    opacity: 0.7;
+}
+
+.column {
+    flex-direction: column;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    align-items: center;
+    padding: 2% !important;
+    box-shadow: 0px 5px 30px -15px rgba(33, 33, 33, 1);
+}
+
+h1.title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 5px dashed rgba(2, 141, 2, 0.726);
+}
+.image {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: burlywood;
+    border-radius: 10px;
+    box-shadow: 0px 5px 30px -15px rgba(33, 33, 33, 1);
+}
+
+.image img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.recipeDesc {
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipeDesc h5 {
+    margin-top: 5%;
+    font-size: 18px;
+    color: rgba(2, 141, 2, 0.726);
+}
+
+.ingredients,
+.steps {
+    width: 50%;
+    padding: 4% 0%;
+}
+
+.ingredients h2,
+.steps h2 {
+    color: rgba(2, 141, 2, 0.726);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ingredients ul,
+.steps ol {
+    padding: 5%;
+    text-align: justify;
+}
+
+.ingredients .list ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+.ingredients .list ul li {
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.ingredients .list ul li::before {
+    content: "✔";
+    color: rgba(2, 141, 2, 0.726);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.steps .list ol li {
+    font-size: 1.1rem;
+}
+
+.steps .list ol li::marker {
+    color: rgba(2, 141, 2, 0.726);
+    font-size: 1.5rem;
+}
+
+.remove {
+    background: none;
+    box-shadow: none;
+}
+
+.sarma .list .link li {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 850px) {
+    #body {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+    #content1,
+    #content2 {
+        width: 80%;
+    }
+    .linksSocial {
+        font-size: 20px;
+    }
 }
